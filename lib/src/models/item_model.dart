@@ -26,7 +26,7 @@ class _Result {
   late int _vote_count;
   late int _id;
   late bool _video;
-  late var _vote_average;
+  late double _vote_average;
   late String _title;
   late double _popularity;
   late String _poster_path;
@@ -42,7 +42,7 @@ class _Result {
     _vote_count = result['vote_count'];
     _id = result['id'];
     _video = result['video'];
-    _vote_average = result['vote_average'];
+    _vote_average = result['vote_average'].toDouble();
     _title = result['title'];
     _popularity = result['popularity'];
     _poster_path = result['poster_path'];

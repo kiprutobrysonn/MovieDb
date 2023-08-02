@@ -5,7 +5,7 @@ import 'package:http/http.dart' show Client;
 
 class MovieProvider {
   Client client = Client();
-  final _apiKey;
+  final _apiKey = "b46fbe26b744de8bbe418a5fba09e249";
 
   Future<ItemModel> fetchMovieList() async {
     var url = Uri.parse(
